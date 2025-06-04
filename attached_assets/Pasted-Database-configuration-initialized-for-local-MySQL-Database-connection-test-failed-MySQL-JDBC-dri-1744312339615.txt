@@ -1,0 +1,37 @@
+Database configuration initialized for local MySQL.
+Database connection test failed: MySQL JDBC driver not found
+Failed to connect to the database!
+Database configuration initialized for local MySQL.
+Error getting available seasons: MySQL JDBC driver not found
+Database configuration initialized successfully.
+Error getting races for season: PostgreSQL JDBC driver not found
+Database configuration initialized successfully.
+Error getting race ID: PostgreSQL JDBC driver not found
+Database configuration initialized successfully.
+Error getting race ID: PostgreSQL JDBC driver not found
+Database configuration initialized successfully.
+Error getting races for season: PostgreSQL JDBC driver not found
+Database configuration initialized successfully.
+Error getting race ID: PostgreSQL JDBC driver not found
+Database configuration initialized successfully.
+Error getting race ID: PostgreSQL JDBC driver not found
+Database configuration initialized successfully.
+Error getting races for season: PostgreSQL JDBC driver not found
+Database configuration initialized successfully.
+Error getting race ID: PostgreSQL JDBC driver not found
+Database configuration initialized successfully.
+Error getting race ID: PostgreSQL JDBC driver not found
+Database configuration initialized successfully.
+Error getting races for season: PostgreSQL JDBC driver not found
+Error getting race ID: PostgreSQL JDBC driver not found
+Database configuration initialized successfully.
+Error getting race ID: PostgreSQL JDBC driver not found
+Error getting race ID: PostgreSQL JDBC driver not found
+Database configuration initialized successfully.  
+Error getting race ID: PostgreSQL JDBC driver not found
+Database configuration initialized successfully.  
+Error getting races for season: PostgreSQL JDBC driver not found
+Database configuration initialized successfully.  
+Error getting race ID: PostgreSQL JDBC driver not found
+Database configuration initialized successfully.  
+Error getting race ID: PostgreSQL JDBC driver not found

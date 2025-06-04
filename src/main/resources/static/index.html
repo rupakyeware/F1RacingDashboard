@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F1 Analytics Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="bg-dark text-white p-3">
+        <div class="container">
+            <h1>F1 Analytics Dashboard</h1>
+            <p class="lead">Real-time Formula 1 race data and analytics</p>
+        </div>
+    </header>
+
+    <main class="container mt-4">
+        <div class="row mb-4">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header bg-danger text-white">
+                        <h4>Race Selection</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <label for="raceSelect" class="form-label">Select Race:</label>
+                            <select id="raceSelect" class="form-select">
+                                <option value="">Loading races...</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="driverSelect" class="form-label">Select Driver:</label>
+                            <select id="driverSelect" class="form-select" disabled>
+                                <option value="">Select a race first</option>
+                            </select>
+                        </div>
+                        <button id="refreshBtn" class="btn btn-primary">Refresh Data</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header bg-primary text-white">
+                        <h4>Driver Statistics</h4>
+                    </div>
+                    <div class="card-body">
+                        <div id="statsDisplay">
+                            <p class="text-center">Select a race and driver to view statistics</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row mb-4">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header bg-success text-white">
+                        <h4>Race Timeline</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <label for="timelineSlider" class="form-label">Lap: <span id="currentLap">0</span></label>
+                            <input type="range" class="form-range" id="timelineSlider" min="0" max="0" value="0" disabled>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header bg-dark text-white">
+                        <h4>Lap Data</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-striped" id="lapDataTable">
+                                <thead>
+                                    <tr>
+                                        <th>Lap</th>
+                                        <th>Time</th>
+                                        <th>Speed (km/h)</th>
+                                        <th>Compound</th>
+                                        <th>Position</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td colspan="5" class="text-center">No data available</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white p-3 mt-5">
+        <div class="container text-center">
+            <p>&copy; 2025 F1 Analytics Dashboard. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript Dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>

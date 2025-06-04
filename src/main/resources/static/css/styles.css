@@ -1,0 +1,90 @@
+/* F1 Dashboard Styles */
+
+body {
+    background-color: #f5f5f5;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+.card {
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+.card-header {
+    font-weight: bold;
+}
+
+footer {
+    margin-top: 30px;
+}
+
+#trackMap {
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #222;
+    position: relative;
+}
+
+@keyframes moveAlongPath {
+    0% { offset-distance: 0%; }
+    100% { offset-distance: 100%; }
+}
+
+#driverCar {
+    offset-path: path('M50,100 C50,50 150,30 200,30 C250,30 350,50 350,100 C350,150 250,170 200,170 C150,170 50,150 50,100 Z');
+    offset-rotate: auto;
+}
+
+#telemetryChart {
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stats-item {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.stats-item:last-child {
+    border-bottom: none;
+}
+
+.stats-label {
+    font-weight: bold;
+    color: #555;
+}
+
+.driver-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #e10600;
+    margin-bottom: 15px;
+}
+
+.team-name {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.lap-highlight {
+    background-color: #ffe9e9 !important;
+}
+
+header {
+    background: linear-gradient(45deg, #e10600 0%, #ff0000 100%);
+}
+
+@media (max-width: 768px) {
+    .card-body {
+        padding: 15px;
+    }
+}
